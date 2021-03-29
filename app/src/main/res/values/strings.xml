@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Big 5 Stats</string>
+    <string name="title_fixtures">Fixtures</string>
+    <string name="title_standings">Standings</string>
+    <string name="title_top_scorers">Top scorers</string>
+</resources>
