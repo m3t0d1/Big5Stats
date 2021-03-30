@@ -23,7 +23,7 @@ class StandingsFragment : Fragment(R.layout.fragment_standings) {
             standingsViewModel.standingResource.collect {resource ->
                 text_standings.text = when(resource) {
                     is Resource.Loading -> getString(R.string.loading)
-                    is Resource.Error -> resource.message
+                    is Resource.Error -> getString(R.string.error)
                     is Resource.Success -> resource.data
                     else -> getString(R.string.title_standings)
                 }

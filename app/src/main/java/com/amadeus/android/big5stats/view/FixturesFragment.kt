@@ -25,7 +25,7 @@ class FixturesFragment : Fragment(R.layout.fragment_fixtures) {
             fixturesViewModel.fixturesResource.collect { resource ->
                 text_fixtures?.text = when(resource) {
                     is Resource.Loading -> getString(R.string.loading)
-                    is Resource.Error -> resource.message
+                    is Resource.Error -> getString(R.string.error)
                     is Resource.Success -> resource.data
                     else -> getString(R.string.title_fixtures)
                 }

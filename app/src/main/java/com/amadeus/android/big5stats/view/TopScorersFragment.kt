@@ -25,7 +25,7 @@ class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
             topScorersViewModel.topScorersResource.collect {resource ->
                 text_top_scorers?.text = when(resource) {
                     is Resource.Loading -> getString(R.string.loading)
-                    is Resource.Error -> resource.message
+                    is Resource.Error -> getString(R.string.error)
                     is Resource.Success -> resource.data
                     else -> getString(R.string.title_top_scorers)
                 }
