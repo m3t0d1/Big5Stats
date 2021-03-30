@@ -10,8 +10,10 @@ import com.amadeus.android.big5stats.util.Resource
 import com.amadeus.android.big5stats.viewModel.StandingsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_standings.*
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collect
 
+@ExperimentalCoroutinesApi
 @AndroidEntryPoint
 class StandingsFragment : Fragment(R.layout.fragment_standings) {
 
