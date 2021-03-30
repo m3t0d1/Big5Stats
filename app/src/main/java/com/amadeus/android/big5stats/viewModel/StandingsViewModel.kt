@@ -50,11 +50,15 @@ class StandingsViewModel
 
     private fun processStandingsResponse(response: StandingsResponse): String {
         val teamsList = StringBuilder()
+        teamsList.appendLine("STANDINGS")
+        teamsList.appendLine()
+        teamsList.appendLine()
         for (table in response.standings.first().table) {
-            teamsList.appendLine(table.team.name)
-        }
-        if (teamsList.isBlank()) {
-            teamsList.append(getApplication<Big5StatsApplication>().getString(R.string.title_standings))
+            val position = table.position
+            val name = table.team.name
+            val points = table.points
+            teamsList.appendLine("$position. $name $points points")
+            teamsList.appendLine()
         }
         return teamsList.toString()
     }

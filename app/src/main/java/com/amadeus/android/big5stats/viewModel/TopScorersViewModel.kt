@@ -50,8 +50,15 @@ class TopScorersViewModel
 
     private fun processTopScorersResponse(response: TopScorersResponse): String {
         val scorersList = StringBuilder()
+        scorersList.appendLine("TOP SCORERS")
+        scorersList.appendLine()
+        scorersList.appendLine()
         for (scorer in response.scorers) {
-            scorersList.appendLine(scorer.player.name)
+            val playerName = scorer.player.name
+            val playerTeam = scorer.team.name
+            val goalsScored = scorer.numberOfGoals
+            scorersList.appendLine("$goalsScored $playerName ($playerTeam)")
+            scorersList.appendLine()
         }
         if (scorersList.isBlank()) {
             scorersList.append(getApplication<Big5StatsApplication>().getString(R.string.title_top_scorers))
