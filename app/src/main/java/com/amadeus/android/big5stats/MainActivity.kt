@@ -1,20 +1,24 @@
 package com.amadeus.android.big5stats
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.edit
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.amadeus.android.big5stats.util.Constants
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private val mainViewModel : MainViewModel by viewModels()
+    @Inject
+    lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,15 +39,24 @@ class MainActivity : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner_leagues?.adapter = adapter
-            spinner_leagues?.setSelection(mainViewModel.getSelectedLeague())
+            spinner_leagues?.setSelection(getSelectedLeague())
             spinner_leagues?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onNothingSelected(p0: AdapterView<*>?) { }
 
                 override fun onItemSelected(p0: AdapterView<*>?, vuew: View?, position: Int, id: Long) {
-                    mainViewModel.setSelectedLeague(position)
+                    setSelectedLeague(position)
                 }
-
             }
         }
+    }
+
+    private fun setSelectedLeague(position: Int) {
+        sharedPreferences.edit{
+            putInt(Constants.SELECTED_LEAGUE_PREFERENCE_NAME, position)
+        }
+    }
+
+    private fun getSelectedLeague() : Int {
+        return sharedPreferences.getInt(Constants.SELECTED_LEAGUE_PREFERENCE_NAME, 0)
     }
 }
