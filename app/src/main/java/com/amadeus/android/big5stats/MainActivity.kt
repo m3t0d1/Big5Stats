@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         ArrayAdapter.createFromResource(
             applicationContext,
             R.array.leagues_array,
-            R.layout.spinner_item
+            R.layout.spinner_item_league
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner_leagues?.adapter = adapter

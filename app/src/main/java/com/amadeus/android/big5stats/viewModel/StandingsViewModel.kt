@@ -3,11 +3,9 @@ package com.amadeus.android.big5stats.viewModel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.amadeus.android.big5stats.Big5StatsApplication
-import com.amadeus.android.big5stats.R
 import com.amadeus.android.big5stats.model.League
 import com.amadeus.android.big5stats.model.StandingsResponse
-import com.amadeus.android.big5stats.repository.StandingsRepository
+import com.amadeus.android.big5stats.repository.FootballDataRepository
 import com.amadeus.android.big5stats.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -22,7 +20,7 @@ import javax.inject.Inject
 class StandingsViewModel
     @Inject constructor(
         application: Application,
-        private val standingsRepository: StandingsRepository
+        private val repository: FootballDataRepository
     ): AndroidViewModel(application) {
 
     private val _standingsResource: MutableStateFlow<Resource<String>>
@@ -30,9 +28,9 @@ class StandingsViewModel
     val standingResource: StateFlow<Resource<String>> = _standingsResource
 
     init {
-        fetchStandingsForLeague(standingsRepository.getSelectedLeague())
+        fetchStandingsForLeague(repository.getSelectedLeague())
         viewModelScope.launch {
-            standingsRepository.getSelectedLeagueFlow().collect {
+            repository.getSelectedLeagueFlow().collect {
                 fetchStandingsForLeague(it)
             }
         }
@@ -40,7 +38,7 @@ class StandingsViewModel
 
     fun fetchStandingsForLeague(league: League) = viewModelScope.launch {
         _standingsResource.emit(Resource.Loading())
-        val response = standingsRepository.getStandingsForLeague(league)
+        val response = repository.getStandingsForLeague(league)
         if (response.isSuccessful && response.body() != null) {
             _standingsResource.emit(Resource.Success(processStandingsResponse(response.body()!!)))
         } else {

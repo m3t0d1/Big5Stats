@@ -7,7 +7,7 @@ import com.amadeus.android.big5stats.Big5StatsApplication
 import com.amadeus.android.big5stats.R
 import com.amadeus.android.big5stats.model.League
 import com.amadeus.android.big5stats.model.TopScorersResponse
-import com.amadeus.android.big5stats.repository.TopScorersRepository
+import com.amadeus.android.big5stats.repository.FootballDataRepository
 import com.amadeus.android.big5stats.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -22,7 +22,7 @@ import javax.inject.Inject
 class TopScorersViewModel
     @Inject constructor(
         application: Application,
-        private val topScorersRepository: TopScorersRepository
+        private val repository: FootballDataRepository
     ): AndroidViewModel(application) {
 
     private val _topScorersResource: MutableStateFlow<Resource<String>>
@@ -30,9 +30,9 @@ class TopScorersViewModel
     val topScorersResource: StateFlow<Resource<String>> = _topScorersResource
 
     init {
-        fetchTopScorersForLeague(topScorersRepository.getSelectedLeague())
+        fetchTopScorersForLeague(repository.getSelectedLeague())
         viewModelScope.launch{
-            topScorersRepository.getSelectedLeagueFlow().collect{
+            repository.getSelectedLeagueFlow().collect{
                 fetchTopScorersForLeague(it)
             }
         }
@@ -40,7 +40,7 @@ class TopScorersViewModel
 
     fun fetchTopScorersForLeague(league: League) = viewModelScope.launch {
         _topScorersResource.emit(Resource.Loading())
-        val response = topScorersRepository.getTopScorersForLeague(league)
+        val response = repository.getTopScorersForLeague(league)
         if (response.isSuccessful && response.body() != null) {
             _topScorersResource.emit(Resource.Success(processTopScorersResponse(response.body()!!)))
         } else {

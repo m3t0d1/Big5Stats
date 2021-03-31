@@ -6,11 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".view.FixturesFragment">
 
-    <TextView
-        android:id="@+id/text_fixtures"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:textAlignment="textStart"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_match_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:text="@string/match_day"
+            android:layout_alignParentTop="true"/>
+
+        <Spinner
+            android:id="@+id/spinner_match_day"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/text_match_day"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/text_fixtures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:layout_below="@+id/text_match_day"/>
+
+    </RelativeLayout>
+
+
 </ScrollView>
