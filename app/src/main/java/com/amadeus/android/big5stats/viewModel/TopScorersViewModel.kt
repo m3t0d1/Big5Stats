@@ -11,9 +11,7 @@ import com.amadeus.android.big5stats.repository.FootballDataRepository
 import com.amadeus.android.big5stats.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -30,25 +28,28 @@ class TopScorersViewModel
     val topScorersResource: StateFlow<Resource<String>> = _topScorersResource
 
     init {
-        fetchTopScorersForLeague(repository.getSelectedLeague())
-        viewModelScope.launch{
-            repository.getSelectedLeagueFlow().collect{
-                fetchTopScorersForLeague(it)
+        viewModelScope.launch {
+            repository.getOrFetchTopScorers(false)
+        }
+        viewModelScope.launch {
+            repository.getSelectedLeagueFlow().collect {
+                val response = repository.getOrFetchTopScorers(false)
+                _topScorersResource.emit(processTopScorersResponse(response))
             }
         }
-    }
-
-    fun fetchTopScorersForLeague(league: League) = viewModelScope.launch {
-        _topScorersResource.emit(Resource.Loading())
-        val response = repository.getTopScorersForLeague(league)
-        if (response.isSuccessful && response.body() != null) {
-            _topScorersResource.emit(Resource.Success(processTopScorersResponse(response.body()!!)))
-        } else {
-            _topScorersResource.emit(Resource.Error(response.message()))
+        viewModelScope.launch {
+            _topScorersResource.emitAll(
+                repository.getTopScorers().map {
+                    processTopScorersResponse(it)
+                }
+            )
         }
     }
 
-    private fun processTopScorersResponse(response: TopScorersResponse): String {
+    private fun processTopScorersResponse(response: TopScorersResponse?): Resource<String> {
+        if (response == null) {
+            return Resource.Error("")
+        }
         val scorersList = StringBuilder()
         scorersList.appendLine("TOP SCORERS")
         scorersList.appendLine()
@@ -63,7 +64,7 @@ class TopScorersViewModel
         if (scorersList.isBlank()) {
             scorersList.append(getApplication<Big5StatsApplication>().getString(R.string.title_top_scorers))
         }
-        return scorersList.toString()
+        return Resource.Success(scorersList.toString())
     }
 
 }

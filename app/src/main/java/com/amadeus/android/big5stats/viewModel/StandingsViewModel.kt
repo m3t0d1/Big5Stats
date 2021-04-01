@@ -9,9 +9,7 @@ import com.amadeus.android.big5stats.repository.FootballDataRepository
 import com.amadeus.android.big5stats.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -28,25 +26,28 @@ class StandingsViewModel
     val standingResource: StateFlow<Resource<String>> = _standingsResource
 
     init {
-        fetchStandingsForLeague(repository.getSelectedLeague())
+        viewModelScope.launch {
+            repository.getOrFetchStandings(false)
+        }
         viewModelScope.launch {
             repository.getSelectedLeagueFlow().collect {
-                fetchStandingsForLeague(it)
+                val response = repository.getOrFetchStandings(false)
+                _standingsResource.emit(processStandingsResponse(response))
             }
         }
-    }
-
-    fun fetchStandingsForLeague(league: League) = viewModelScope.launch {
-        _standingsResource.emit(Resource.Loading())
-        val response = repository.getStandingsForLeague(league)
-        if (response.isSuccessful && response.body() != null) {
-            _standingsResource.emit(Resource.Success(processStandingsResponse(response.body()!!)))
-        } else {
-            _standingsResource.emit(Resource.Error(response.message()))
+        viewModelScope.launch {
+            _standingsResource.emitAll(
+                repository.getStandings().map {
+                    processStandingsResponse(it)
+                }
+            )
         }
     }
 
-    private fun processStandingsResponse(response: StandingsResponse): String {
+    private fun processStandingsResponse(response: StandingsResponse?): Resource<String> {
+        if (response == null) {
+            return Resource.Error("")
+        }
         val teamsList = StringBuilder()
         teamsList.appendLine("STANDINGS")
         teamsList.appendLine()
@@ -58,6 +59,6 @@ class StandingsViewModel
             teamsList.appendLine("$position. $name $points points")
             teamsList.appendLine()
         }
-        return teamsList.toString()
+        return Resource.Success(teamsList.toString())
     }
 }

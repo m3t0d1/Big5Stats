@@ -24,16 +24,16 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideGson() = Gson()
-
-    @Singleton
-    @Provides
     fun provideFootballDatabase(@ApplicationContext context: Context)
             = Room.databaseBuilder(
         context,
         FootballStatsDatabase::class.java,
         Constants.DATABASE_NAME
     ).build()
+
+    @Singleton
+    @Provides
+    fun provideCompetitionsDao(database: FootballStatsDatabase) = database.getCompetitionsDao()
 
     @Singleton
     @Provides

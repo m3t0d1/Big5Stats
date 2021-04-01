@@ -10,7 +10,10 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface FixturesDao {
     @Query("SELECT * FROM fixtures WHERE league_code = :leagueCode AND match_day = :matchDay LIMIT 1")
-    fun getFixturesForLeague(leagueCode: String, matchDay: Int): Flow<FixturesEntity>
+    fun getFixturesForLeagueFlow(leagueCode: String, matchDay: Int): Flow<FixturesEntity?>
+
+    @Query("SELECT * FROM fixtures WHERE league_code = :leagueCode AND match_day = :matchDay LIMIT 1")
+    suspend fun getFixturesForLeague(leagueCode: String, matchDay: Int): FixturesEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertFixtures(vararg standings: FixturesEntity)

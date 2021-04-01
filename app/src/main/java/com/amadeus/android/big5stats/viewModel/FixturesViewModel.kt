@@ -10,9 +10,7 @@ import com.amadeus.android.big5stats.repository.FootballDataRepository
 import com.amadeus.android.big5stats.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -39,23 +37,32 @@ class FixturesViewModel
         viewModelScope.launch {
             _currentLeague.emit(repository.getSelectedLeague())
         }
-        fetchLeagueInfo(repository.getSelectedLeague())
+        viewModelScope.launch {
+            val response = repository.getOrFetchCompetition(false)
+            _currentMatchDay.emit(getCurrentMatchDay(response))
+        }
         viewModelScope.launch {
             repository.getSelectedLeagueFlow().collect {
-                fetchLeagueInfo(it)
+                val competitionResponse = repository.getOrFetchCompetition(false)
+                val fixturesResponse = repository.getOrFetchFixtures(
+                    getCurrentMatchDay(competitionResponse),
+                    false
+                )
+                _fixturesResource.emit(processFixturesResponse(fixturesResponse))
             }
+        }
+        viewModelScope.launch {
+            _fixturesResource.emitAll(
+                repository.geFixtures(_currentMatchDay.value).map {
+                    processFixturesResponse(it)
+                }
+            )
         }
     }
 
     fun fetchFixturesForMatchDay(matchDay: Int) = viewModelScope.launch {
         _fixturesResource.emit(Resource.Loading())
-        val response
-                = repository.getFixturesForLeague(repository.getSelectedLeague(), matchDay)
-        if (response.isSuccessful && response.body() != null) {
-            _fixturesResource.emit(Resource.Success(processFixturesResponse(response.body()!!)))
-        } else {
-            _fixturesResource.emit(Resource.Error(response.message()))
-        }
+        _fixturesResource.emit(processFixturesResponse(repository.getOrFetchFixtures(matchDay, false)))
     }
 
     private fun fetchLeagueInfo(league: League) = viewModelScope.launch {
@@ -70,11 +77,14 @@ class FixturesViewModel
 
     }
 
-    private fun getCurrentMatchDay(response: CompetitionResponse): Int {
-        return response.currentSeason.currentMatchday
+    private fun getCurrentMatchDay(response: CompetitionResponse?): Int {
+        return response?.currentSeason?.currentMatchday ?: 1
     }
 
-    private fun processFixturesResponse(response: MatchesResponse): String {
+    private fun processFixturesResponse(response: MatchesResponse?): Resource<String> {
+        if (response == null) {
+            return Resource.Error("")
+        }
         val fixturesList = StringBuilder()
         for (match in response.matches) {
             val homeTeam = match.homeTeam.name
@@ -85,6 +95,6 @@ class FixturesViewModel
             fixturesList.appendLine(fixture)
             fixturesList.appendLine()
         }
-        return fixturesList.toString()
+        return Resource.Success(fixturesList.toString())
     }
 }

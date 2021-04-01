@@ -1,16 +1,21 @@
 package com.amadeus.android.big5stats.db
 
 import androidx.room.TypeConverter
+import com.amadeus.android.big5stats.model.CompetitionResponse
 import com.amadeus.android.big5stats.model.MatchesResponse
 import com.amadeus.android.big5stats.model.StandingsResponse
 import com.amadeus.android.big5stats.model.TopScorersResponse
 import com.google.gson.Gson
-import javax.inject.Inject
 
 class Converters {
 
-    @Inject
-    lateinit var gson: Gson
+    val gson = Gson()
+
+    @TypeConverter
+    fun fromCompetitions(competitionResponse: CompetitionResponse) = typeToString(competitionResponse)
+
+    @TypeConverter
+    fun toCompetitions(string: String) = stringToType<CompetitionResponse>(string)
 
     @TypeConverter
     fun fromFixtures(matchesResponse: MatchesResponse) = typeToString(matchesResponse)

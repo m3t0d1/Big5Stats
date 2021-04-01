@@ -9,9 +9,14 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface StandingsDao {
+
     @Query("SELECT * FROM standings WHERE league_code = :leagueCode LIMIT 1")
-    fun getStandingsForLeague(leagueCode: String): Flow<StandingsEntity>
+    suspend fun getStandingsForLeague(leagueCode: String): StandingsEntity?
+
+    @Query("SELECT * FROM standings WHERE league_code = :leagueCode LIMIT 1")
+    fun getStandingsForLeagueFlow(leagueCode: String): Flow<StandingsEntity?>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertStandings(vararg standings: StandingsEntity)
+
 }
