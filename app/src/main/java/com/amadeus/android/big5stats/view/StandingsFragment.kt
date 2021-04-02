@@ -17,19 +17,34 @@ import kotlinx.coroutines.flow.collect
 @AndroidEntryPoint
 class StandingsFragment : Fragment(R.layout.fragment_standings) {
 
-    private val standingsViewModel: StandingsViewModel by viewModels()
+    private val viewModel: StandingsViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         lifecycleScope.launchWhenStarted {
-            standingsViewModel.standingResource.collect {resource ->
+            viewModel.standingResource.collect { resource ->
                 text_standings.text = when(resource) {
-                    is Resource.Loading -> getString(R.string.loading)
-                    is Resource.Error -> getString(R.string.error)
-                    is Resource.Success -> resource.data
-                    else -> getString(R.string.title_standings)
+                    is Resource.Loading -> {
+                        swipe_to_refresh_standings?.isRefreshing = true
+                        getString(R.string.loading)
+                    }
+                    is Resource.Error -> {
+                        swipe_to_refresh_standings?.isRefreshing = false
+                        getString(R.string.error)
+                    }
+                    is Resource.Success -> {
+                        swipe_to_refresh_standings?.isRefreshing = false
+                        resource.data
+                    }
+                    else -> {
+                        swipe_to_refresh_standings?.isRefreshing = false
+                        getString(R.string.title_standings)
+                    }
                 }
             }
+        }
+        swipe_to_refresh_standings?.setOnRefreshListener {
+            viewModel.getOrFetchStandings(true)
         }
     }
 }

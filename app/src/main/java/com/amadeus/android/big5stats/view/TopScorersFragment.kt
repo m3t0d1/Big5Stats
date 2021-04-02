@@ -17,19 +17,34 @@ import kotlinx.coroutines.flow.collect
 @AndroidEntryPoint
 class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
 
-    private val topScorersViewModel: TopScorersViewModel by viewModels()
+    private val viewModel: TopScorersViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         lifecycleScope.launchWhenStarted {
-            topScorersViewModel.topScorersResource.collect {resource ->
+            viewModel.topScorersResource.collect { resource ->
                 text_top_scorers?.text = when(resource) {
-                    is Resource.Loading -> getString(R.string.loading)
-                    is Resource.Error -> getString(R.string.error)
-                    is Resource.Success -> resource.data
-                    else -> getString(R.string.title_top_scorers)
+                    is Resource.Loading -> {
+                        swipe_to_refresh_top_scorers?.isRefreshing = true
+                        getString(R.string.loading)
+                    }
+                    is Resource.Error -> {
+                        swipe_to_refresh_top_scorers?.isRefreshing = false
+                        getString(R.string.error)
+                    }
+                    is Resource.Success -> {
+                        swipe_to_refresh_top_scorers?.isRefreshing = false
+                        resource.data
+                    }
+                    else -> {
+                        swipe_to_refresh_top_scorers?.isRefreshing = false
+                        getString(R.string.title_top_scorers)
+                    }
                 }
             }
+        }
+        swipe_to_refresh_top_scorers?.setOnRefreshListener {
+            viewModel.getOrFetchTopScorers(true)
         }
     }
 }

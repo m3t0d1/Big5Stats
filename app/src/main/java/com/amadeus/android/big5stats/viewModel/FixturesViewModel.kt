@@ -65,18 +65,6 @@ class FixturesViewModel
         _fixturesResource.emit(processFixturesResponse(repository.getOrFetchFixtures(matchDay, false)))
     }
 
-    private fun fetchLeagueInfo(league: League) = viewModelScope.launch {
-        _currentLeague.emit(league)
-        _fixturesResource.emit(Resource.Loading())
-        val leagueResponse = repository.getLeagueInfo(league)
-        if (leagueResponse.isSuccessful && leagueResponse.body() != null) {
-            _currentMatchDay.emit(getCurrentMatchDay(leagueResponse.body()!!))
-        } else {
-            _fixturesResource.emit(Resource.Error(leagueResponse.message()))
-        }
-
-    }
-
     private fun getCurrentMatchDay(response: CompetitionResponse?): Int {
         return response?.currentSeason?.currentMatchday ?: 1
     }

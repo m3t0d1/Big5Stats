@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_to_refresh_standings"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.StandingsFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_standings"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:textAlignment="textStart"
-        android:textSize="20sp" />
-</ScrollView>
+        android:layout_height="match_parent"
+        tools:context=".view.StandingsFragment">
+
+        <TextView
+            android:id="@+id/text_standings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

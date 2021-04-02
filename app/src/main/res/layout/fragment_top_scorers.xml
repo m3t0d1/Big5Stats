@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_to_refresh_top_scorers"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.TopScorersFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_top_scorers"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:textAlignment="textStart"
-        android:textSize="20sp" />
+        android:layout_height="match_parent"
+        tools:context=".view.TopScorersFragment">
 
-</ScrollView>
+        <TextView
+            android:id="@+id/text_top_scorers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

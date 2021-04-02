@@ -3,7 +3,6 @@ package com.amadeus.android.big5stats.viewModel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.amadeus.android.big5stats.model.League
 import com.amadeus.android.big5stats.model.StandingsResponse
 import com.amadeus.android.big5stats.repository.FootballDataRepository
 import com.amadeus.android.big5stats.util.Resource
@@ -26,9 +25,7 @@ class StandingsViewModel
     val standingResource: StateFlow<Resource<String>> = _standingsResource
 
     init {
-        viewModelScope.launch {
-            repository.getOrFetchStandings(false)
-        }
+        getOrFetchStandings(false)
         viewModelScope.launch {
             repository.getSelectedLeagueFlow().collect {
                 val response = repository.getOrFetchStandings(false)
@@ -41,6 +38,12 @@ class StandingsViewModel
                     processStandingsResponse(it)
                 }
             )
+        }
+    }
+
+    fun getOrFetchStandings(refresh: Boolean) {
+        viewModelScope.launch {
+            repository.getOrFetchStandings(refresh)
         }
     }
 

@@ -1,47 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_to_refresh_fixtures"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.FixturesFragment">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        tools:context=".view.FixturesFragment">
 
-        <TextView
-            android:id="@+id/text_match_day"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="16dp"
-            android:textAlignment="textStart"
-            android:textSize="20sp"
-            android:text="@string/match_day"
-            android:layout_alignParentTop="true"/>
-
-        <Spinner
-            android:id="@+id/spinner_match_day"
-            android:layout_width="96dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_toEndOf="@+id/text_match_day"
-            android:gravity="end"/>
-
-        <TextView
-            android:id="@+id/text_fixtures"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:textAlignment="textStart"
-            android:textSize="20sp"
-            android:layout_below="@+id/text_match_day"/>
+            android:layout_height="wrap_content">
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/text_match_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:text="@string/match_day"
+                android:layout_alignParentTop="true"/>
 
+            <Spinner
+                android:id="@+id/spinner_match_day"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@+id/text_match_day"
+                android:gravity="end"/>
 
-</ScrollView>
+            <TextView
+                android:id="@+id/text_fixtures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:layout_below="@+id/text_match_day"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

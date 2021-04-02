@@ -28,9 +28,7 @@ class TopScorersViewModel
     val topScorersResource: StateFlow<Resource<String>> = _topScorersResource
 
     init {
-        viewModelScope.launch {
-            repository.getOrFetchTopScorers(false)
-        }
+        getOrFetchTopScorers(false)
         viewModelScope.launch {
             repository.getSelectedLeagueFlow().collect {
                 val response = repository.getOrFetchTopScorers(false)
@@ -43,6 +41,12 @@ class TopScorersViewModel
                     processTopScorersResponse(it)
                 }
             )
+        }
+    }
+
+    fun getOrFetchTopScorers(refresh: Boolean) {
+        viewModelScope.launch {
+            repository.getOrFetchTopScorers(refresh)
         }
     }
 

@@ -42,12 +42,28 @@ class FixturesFragment : Fragment(R.layout.fragment_fixtures) {
         lifecycleScope.launchWhenStarted {
             viewModel.fixturesResource.collect { resource ->
                 text_fixtures?.text = when(resource) {
-                    is Resource.Loading -> getString(R.string.loading)
-                    is Resource.Error -> getString(R.string.error)
-                    is Resource.Success -> resource.data
-                    else -> getString(R.string.title_fixtures)
+                    is Resource.Loading -> {
+                        swipe_to_refresh_fixtures?.isRefreshing = true
+                        getString(R.string.loading)
+                    }
+                    is Resource.Error -> {
+                        swipe_to_refresh_fixtures?.isRefreshing = false
+                        getString(R.string.error)
+                    }
+                    is Resource.Success -> {
+                        swipe_to_refresh_fixtures?.isRefreshing = false
+                        resource.data
+                    }
+                    else -> {
+                        swipe_to_refresh_fixtures?.isRefreshing = false
+                        getString(R.string.title_fixtures)
+                    }
                 }
             }
+        }
+        swipe_to_refresh_fixtures?.setOnRefreshListener {
+            val matchDay = spinner_match_day.selectedItemPosition + 1
+            viewModel.fetchFixturesForMatchDay(matchDay)
         }
     }
 
