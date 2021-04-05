@@ -60,9 +60,9 @@ class FixturesViewModel
         }
     }
 
-    fun fetchFixturesForMatchDay(matchDay: Int) = viewModelScope.launch {
+    fun fetchFixturesForMatchDay(matchDay: Int, refresh: Boolean) = viewModelScope.launch {
         _fixturesResource.emit(Resource.Loading())
-        _fixturesResource.emit(processFixturesResponse(repository.getOrFetchFixtures(matchDay, false)))
+        _fixturesResource.emit(processFixturesResponse(repository.getOrFetchFixtures(matchDay, refresh)))
     }
 
     private fun getCurrentMatchDay(response: CompetitionResponse?): Int {

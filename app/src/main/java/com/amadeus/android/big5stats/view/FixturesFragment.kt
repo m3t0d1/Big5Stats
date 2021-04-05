@@ -63,7 +63,7 @@ class FixturesFragment : Fragment(R.layout.fragment_fixtures) {
         }
         swipe_to_refresh_fixtures?.setOnRefreshListener {
             val matchDay = spinner_match_day.selectedItemPosition + 1
-            viewModel.fetchFixturesForMatchDay(matchDay)
+            viewModel.fetchFixturesForMatchDay(matchDay, true)
         }
     }
 
@@ -84,7 +84,7 @@ class FixturesFragment : Fragment(R.layout.fragment_fixtures) {
 
                 override fun onItemSelected(p0: AdapterView<*>?, vuew: View?, position: Int, id: Long) {
                     if (viewModel.currentMatchDay.value > 0) {
-                        viewModel.fetchFixturesForMatchDay(position + 1)
+                        viewModel.fetchFixturesForMatchDay(position + 1, false)
                     }
                 }
             }
