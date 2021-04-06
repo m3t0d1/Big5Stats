@@ -24,6 +24,12 @@ object AppModule {
 
     @Singleton
     @Provides
+    fun provideApplication(@ApplicationContext context: Context): Context {
+        return context
+    }
+
+    @Singleton
+    @Provides
     fun provideFootballDatabase(@ApplicationContext context: Context)
             = Room.databaseBuilder(
         context,
