@@ -1,0 +1,725 @@
+[
+  {
+    "number": "1",
+    "imageUrl": "https://www.coleka.com/media/item/202511/03/italian-brainrot-carte-n-1-001.webp",
+    "name": "BLUBERINI OCTOPUSINI",
+    "description": "Octobubble",
+    "rhyme": "This tiny and chubby marine little chap lives down on the seabed... blup blup blap!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "135"
+  },
+  {
+    "number": "2",
+    "imageUrl": "https://www.coleka.com/media/item/202511/03/italian-brainrot-carte-n-2-002.webp",
+    "name": "TIRILICALICA TIRILICALACO",
+    "description": "Chickadoodle droop",
+    "rhyme": "In desert heat, the chicken cried, his feathered chest all glorified. He searched for love through sands so wide - Please let her be a bit frostified!",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "140"
+  },
+  {
+    "number": "3",
+    "imageUrl": "https://www.coleka.com/media/item/202511/03/italian-brainrot-carte-n-3-003.webp",
+    "name": "COCCADRILLO FORMAGGIOSO",
+    "description": "Aged to perfection",
+    "rhyme": "A snoozy croc let out a yawn, quite pleased beneath the morning down. It takes bold dreams, and cheesy pride, to be a slice that's aged inside!",
+    "category": "Mutant",
+    "type": "CHARACTER",
+    "madnessPoints": "130"
+  },
+  {
+    "number": "4",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-4-004.webp",
+    "name": "PANBRONCIO AL LATTE",
+    "description": "Mope 'n' crumble",
+    "rhyme": "I'm drenched in milk, a crumbled mess, a snack with deep emotional stress. Don't try to hug this tear-soaked bun - I'm moody food that spoils the fun!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "175"
+  },
+  {
+    "number": "5",
+    "imageUrl": "https://www.coleka.com/media/item/202511/01/italian-brainrot-carte-n-5-005.webp",
+    "name": "MARCO POLLO",
+    "description": "Free-range explorer",
+    "rhyme": "A rooster brave with travel flair, he spices lands from here to there! He sails at dawn, returns to dine - not one crumb left at lunchtime! ",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "100"
+  },
+  {
+    "number": "6",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-6-006.webp",
+    "name": "OCA DEL ROVER LUNARE",
+    "description": "Goosetronaut",
+    "rhyme": "With helmet snug on lunar brow, the goose declared, I want it now! Not just to soar like I once planned – my deepest wish to truly land. ",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "70"
+  },
+  {
+    "number": "7",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-7-007.webp"
+  },
+  {
+    "number": "8",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-8-008-150.webp",
+    "name": "CACTO IPPOPOTAMO",
+    "description": "Standing proud",
+    "rhyme": "An elegant hippo-cactus, towering and rare, saunters the sands with flamboyant flair.",
+    "category": "Bomba Strategica",
+    "type": "CHARACTER",
+    "madnessPoints": "50"
+  },
+  {
+    "number": "9",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-9-009.webp",
+    "name": "RAPARRAPA CHE PARA",
+    "description": "Blockatroot",
+    "rhyme": "Raparrapa dives, loses grip, takes a ride - juggles the ball till the match is tied!",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "30"
+  },
+  {
+    "number": "10",
+    "imageUrl": "https://www.coleka.com/media/item/202511/04/italian-brainrot-carte-n-10-010.webp",
+    "name": "CERVELLO PUDDING",
+    "description": "Dessert of divine intellect",
+    "rhyme": "Cervello Pudding thinks and leans it trembles laughs then quits the scenes It hides in the fridge completely still but melts away when thoughts overfill.",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "85"
+  },
+  {
+    "number": "11",
+    "imageUrl": "https://www.coleka.com/media/item/202511/04/italian-brainrot-carte-n-11-011.webp",
+    "name": "GNAMMO SLAMMO E SGOMMO",
+    "description": "Three-brained baldtop centaur",
+    "rhyme": "Gnammo Slammo Sgommo speeds in a blaze, yells, chomps, and bounds in echoing craze!",
+    "category": "Kaboom Plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "12",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-12-012.webp",
+    "name": "AEROMUCCA ARMATA",
+    "description": "Proud cow commander",
+    "rhyme": "A fighter jet zipped through the blue - surprise! A cow was in the crew. She launched her missiles, wild and proud, mooed with joy and laughed out loud.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "125"
+  },
+  {
+    "number": "13",
+    "imageUrl": "https://www.coleka.com/media/item/202511/04/italian-brainrot-carte-n-13-013.webp",
+    "name": "CAPRAMANTE SOTTOPANCA",
+    "description": "Supreme terror",
+    "rhyme": "Caprampante under the bench leaps and lunges starts to clench With springy hooves it bounces through breaks the beat then sticks like glue.",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "80"
+  },
+  {
+    "number": "14",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-14-014.webp"
+  },
+  {
+    "number": "15",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-15-015.webp",
+    "name": "CROCODILO POTATINO",
+    "description": "Always full always chill",
+    "rhyme": "The crocodile adored the spud, She's wise and round a golden bud She blinked and said a bit confused You're such a gent... with a tubby tater-tude!",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "70"
+  },
+  {
+    "number": "16",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-16-016-150.webp",
+    "name": "BONECA AMBALABU",
+    "description": "Potere del copertone anfibio ",
+    "rhyme": "La rana che amava la nota contro fuso dentro una ruota Mi sento un'artista che grande emozione Poi rotolò in direzione stazione",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "80"
+  },
+  {
+    "number": "17",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-17-017.webp"
+  },
+  {
+    "number": "18",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-18-018.webp",
+    "name": "RUGGINATO LUPOGT",
+    "description": "Snarl on wheels",
+    "rhyme": "That growling wolf, a glam-tuned brute, leased a supercar sleek and cute. He howled through town with turbo flair, then launched the car into the air! ",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "70"
+  },
+  {
+    "number": "19",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-19-019.webp",
+    "name": "BALLERINO LOLOLO",
+    "description": "Sparkling mover",
+    "rhyme": "I live for dance not belly flab! I'm built to groove - no time to gab!",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "75"
+  },
+  {
+    "number": "20",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-20-020.webp",
+    "name": "LA VACCA ATOMO ATOMITA",
+    "description": "Psychedelic reaction",
+    "rhyme": "I skip the grass, I ditch the well, I glow in space like a stellar spell. Through stars I zip in molten flow - and BOOM like a cosmic volcano!",
+    "category": "Kaboom plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "21",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-21-021.webp",
+    "name": "TRIKITRAKATELAS",
+    "description": "Stone-faced seduction",
+    "rhyme": "A proud-nosed rhino found his crush a cactus green serene and plush One kiss - kablam! - and by design he joined that prickly valentine ",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "200"
+  },
+  {
+    "number": "22",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-22-022-150.webp",
+    "name": "APPOLLINO CAPPUCCINO",
+    "description": "Super potere divino",
+    "rhyme": "ulla con fare divino ardito sotto un balzo capriccioso Ma d'Baccanale un giro un po' strano gli scivola solo un... e un caso strano!",
+    "category": "Bomba strategica",
+    "type": "ASSIST"
+  },
+  {
+    "number": "23",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-23-023.webp",
+    "name": "BALLERINA NICOTINA",
+    "description": "Pointe and puff",
+    "rhyme": "A lovely dancer, lithe and keen, trained on smokes behind the scene. They fuel my plie, they set me free! Then coughed and fell - right in the WC",
+    "category": "Whirl heads",
+    "type": "CHARACTER",
+    "madnessPoints": "130"
+  },
+  {
+    "number": "24",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-24-024.webp",
+    "name": "PARARELL BARARELL",
+    "description": "Lazy lala uncle aunty aah!",
+    "rhyme": "A giant face Soprano - style beached itself laughing on a chair while Its modern! it shrieked Avant-garde trauma! But the chair just whimpered Call my mama!",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "200"
+  },
+  {
+    "number": "25",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-25-025.webp"
+  },
+  {
+    "number": "26",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-26-026.webp",
+    "name": "LUMINARIA FIORENZA",
+    "description": "Proud in springtime",
+    "rhyme": "A velvet fawn with stealthy grace, the prettiest in her woodland place.",
+    "category": "Kaboom plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "27",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-26-026.webp",
+    "name": "RATATINO ROTTAMINO",
+    "description": "Reckless rookie driver",
+    "rhyme": "He zipped around, the sewer king, told all the kids, I own this thing! But royalty meant pipes and wet... his trone? A drain. His crown? A bidet set.",
+    "category": "Mutant bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "80"
+  },
+  {
+    "number": "28",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-26-026.webp",
+    "name": "CHIMPANZINI BANANINI",
+    "description": "Yellow-powered peel",
+    "rhyme": "A fuzzy green chimp with fur so bright, lived in a banana, snug and tight.",
+    "category": "Kaboom plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "29",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-26-026.webp",
+    "name": "TRALALITA TRALALELITA",
+    "description": "Runway queen of the coast",
+    "rhyme": "In heels of red, with flair so fine, a shark paraded down the brine. Fashion is my true vacation! Then tripped... on a seaweed decoration.",
+    "category": "ERROR 404",
+    "type": "CHARACTER",
+    "madnessPoints": "125"
+  },
+  {
+    "number": "30",
+    "imageUrl": "https://www.coleka.com/media/item/202510/30/italian-brainrot-carte-n-30-030.webp",
+    "name": "MANGGA TERKUAT",
+    "description": "Flex the fruit",
+    "rhyme": "A mango pumped at the local gym, Look! he roared, I'm strong and trim! His fruity muscles looked so stout... till one bad push-up squashed him out.",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "100"
+  },
+  {
+    "number": "31",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-31-031-150.webp",
+    "name": "PASTARUGO CALAMARELLO",
+    "description": "Cooked, crooned and doomed",
+    "rhyme": "A firm little pasta with moves offbeat danced with a squid on wobbly feet. He tried a tango, but lacked all grace... and splashed in sauce with bold embrace.",
+    "category": "Whirl heads",
+    "type": "CHARACTER",
+    "madnessPoints": "110"
+  },
+  {
+    "number": "32",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-32-032.webp",
+    "name": "EVIL BABY OCTI TRIPLETS",
+    "description": "Scary but squishy ",
+    "rhyme": "Three tiny octos in villain disguise, stole strands of seaweed with bashful eyes. We're terror! they cried, We'll bring you pain! then fled in fear to the deep sea domain.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "105"
+  },
+  {
+    "number": "33",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-33-033-150.webp",
+    "name": "SGOMMABIRILLO BRILLO",
+    "description": "Cone gone off the road",
+    "rhyme": "Sgommabiriilo Brillo no longer leads the way, he crashes through signs in wild disarray. He toasts at lights, then hits the brake... this reckless cone made one big mistake.",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "50"
+  },
+  {
+    "number": "34",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-34-034.webp"
+  },
+  {
+    "number": "35",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-35-035.webp",
+    "name": "TRIC TRAC BARABOOM",
+    "description": "Raw veggie vibes",
+    "rhyme": "The sassy squash without a shoe said, Watch out world - I'm veggie new!",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "155"
+  },
+  {
+    "number": "36",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-36-036.webp"
+  },
+  {
+    "number": "37",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-37-037.webp"
+  },
+  {
+    "number": "38",
+    "imageUrl": "https://www.coleka.com/media/item/202511/02/italian-brainrot-carte-n-38-038.webp",
+    "name": "LIRILI LARILA",
+    "description": "Faux-flip fury ",
+    "rhyme": "An elegant elephant smooth in his stride married a cactus mistaking his bride What passion! What a sweet caress! He cried - then limped away in distress.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "100"
+  },
+  {
+    "number": "39",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-39-039.webp",
+    "name": "PLATYPUS BOOS BOOS BOOS",
+    "description": "Gives rides to whoever arrives",
+    "rhyme": "The platypus, with puzzled stride, climbed on a bus - quite misaligned. How odd, he said, it won't reach town. And ended up in the savanna, handing sweets around!",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "175"
+  },
+  {
+    "number": "40",
+    "imageUrl": "https://www.coleka.com/media/item/202511/04/italian-brainrot-carte-n-40-040.webp",
+    "name": "GARAM MARARAM RARAMAN MARARAMAN DAN MADU DUNGDUNGDUNG TAKTUNGTUNG PERKUNTUNG",
+    "description": "Nothing makes shelf sense any more",
+    "rhyme": "A saltshaker proud and made of steel challenged a jar to a dancing deal She tripped on step one with a terrible sound You've cooked a risotto! the jar laughed aloud.",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "110"
+  },
+  {
+    "number": "41",
+    "imageUrl": "https://www.coleka.com/media/item/202511/04/italian-brainrot-carte-n-41-041.webp",
+    "name": "TIKTARUGO RITARDONE",
+    "description": "Time slipped time skipped",
+    "rhyme": "Tiktarugo crawling past the date skips spring and autumn he's always late He hums the time with no sensation then melts into a mild vibration.",
+    "category": "Kaboom Plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "42",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-42-042.webp"
+  },
+  {
+    "number": "43",
+    "imageUrl": "https://www.coleka.com/media/item/202511/04/italian-brainrot-carte-n-43-043.webp",
+    "name": "APELLONE DI POLLOPELLE",
+    "description": "The chosen one... with crispy skin",
+    "rhyme": "Apellone di Pollopelle, winged and fried, soared through flames with crispy pride. He threw his bone like Zeus in rage, and roasted knights right off the stage!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "130"
+  },
+  {
+    "number": "44",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-44-044.webp",
+    "name": "DISSASTRULLO CANNIBALO",
+    "description": "Free fruit, not fear!",
+    "rhyme": "Dissastrulo Cannibalo, wild and spry, does pirouettes with a blade held high. He carves with joy, no evil near: It's melon, friends - not something to fear!",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "65"
+  },
+  {
+    "number": "45",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-45-045.webp",
+    "name": "MOUSARINI PISTOLINI",
+    "description": "Quick with words, slow with footing",
+    "rhyme": "Mousarini, chatty and twitchy too, longed for a shootout with pistols two.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "180"
+  },
+  {
+    "number": "46",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-46-046.webp",
+    "name": "TACCHITACCHI ATTACCATICCIO",
+    "description": "Stiletto heels for all",
+    "rhyme": "Apellone di Pollopelle, winged and fried, soared through flames with crispy pride. He threw his bone like Zeus in rage, and roasted knights right off the stage!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "105"
+  },
+  {
+    "number": "47",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-47-047.webp",
+    "name": "BUDINACCIO DEL DISGUSTO",
+    "description": "Sucrose overdrive",
+    "rhyme": "A tuna pudding, baked just right, for a grandpa-cat, a fancy bite. He licked his lips, his eyes went wide - It's art, I guess... with stink inside.",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "120"
+  },
+  {
+    "number": "48",
+    "imageUrl": "https://www.coleka.com/media/item/202510/30/italian-brainrot-carte-n-48-048.webp",
+    "name": "CAGNOILNO INSAPONATO",
+    "description": "Laundry's best friend",
+    "rhyme": "Cagnoilno fresh and squeaky clean ran so fast a slippery sheen! He zoomed like a soap-fuelled jet in flight into the laundry - Hey is this alright?",
+    "category": "Kaboom Plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "49",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-49-049-150.webp",
+    "name": "PING PONG PONGARO",
+    "description": "Ping-pong champ of pure disgust",
+    "rhyme": "Playing ping-pong with just one toe, a rat looks up and wants to know: What's this madness? What's your song? I say: Pizza? She says: All night long",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "130"
+  },
+  {
+    "number": "50",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-50-050.webp",
+    "name": "GIRAFFA CELESTE",
+    "description": "Explorer of distant worlds ",
+    "rhyme": "In a sky-blue suit she played her game hide and seek was her claim to fame They can't see me she gave a roar till her neck popped out from a fruity decor.",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "75"
+  },
+  {
+    "number": "51",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-50-050.webp",
+    "name": "SKIBIDETTO TOALETTO",
+    "description": "Flush hit jingle",
+    "rhyme": "Skibidi Dop Dop Dop Yes Yes Yes!",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "170"
+  },
+  {
+    "number": "52",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-52-052.webp",
+    "name": "BATATOSO PELOSO, STRAMBO E GULOSO",
+    "description": "Spud to melt the winter cold",
+    "rhyme": "He strolled with joy and cuddled tight, his darling spud, his love so right. To the altar! he cried with flair - but mash was all that made it there.",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "125"
+  },
+  {
+    "number": "53",
+    "imageUrl": "https://www.coleka.com/media/item/202511/02/italian-brainrot-carte-n-53-053.webp",
+    "name": "PICCIONE MACCHINA",
+    "description": "Sold on electric?",
+    "rhyme": "With trainers and engine, the pigeon came down, zoomed into Spain like he owned the town. Next stop - Mars! he shouted with glee... then boom went the alien, explosively free!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "120"
+  },
+  {
+    "number": "54",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-54-054.webp",
+    "name": "MELANINI PANDANINI",
+    "description": "An apple a day keeps the panda away",
+    "rhyme": "An apple once dreamed of a graceful dance, but tripped on a panda in holiday trance. I'm so sorry! she said, quite red - he yawned: It's fine... I'm back to bed.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "40"
+  },
+  {
+    "number": "55",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-55-055.webp",
+    "name": "LOS LIRALITOS DICEN LARILA",
+    "description": "Cuteness with a trunk",
+    "rhyme": "They twirled in sandals, sweet and small, with cactus bellies - ouch for all! Their butts got poked, the crowd went mute... no concert today, just one sore glute!",
+    "category": "Kaboom Plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "56",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-56-056.webp"
+  },
+  {
+    "number": "57",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-57-057.webp",
+    "name": "PHONE SELFONE",
+    "description": "Always charged",
+    "rhyme": "I click my phone with photonic pride, my hamster's selfie goes worldwide. The marmot waves a trombone high, while my ice cream sings a lullaby.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "30"
+  },
+  {
+    "number": "58",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-58-058.webp",
+    "name": "STRAND BIER",
+    "description": "A lifelong dream",
+    "rhyme": "A punk cow drank her fizzy brew, crooned Moooo like stars in a moo-moo revue. On the throne with thunderous might... she earned Milk Obliteration that night!",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "50"
+  },
+  {
+    "number": "59",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-59-059.webp",
+    "name": "FOMO SAPIENS",
+    "description": "The wait for a like",
+    "rhyme": "The Fomo Sapiens stares askew, streams his thoughts in cosmic goo. A digital sage in meme parade, slings hot noodles in a starry charade.",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "135"
+  },
+  {
+    "number": "60",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-60-060.webp",
+    "name": "BALLERINA CAPPUCCINA",
+    "description": "Loves music and Ballerino Lalolo",
+    "rhyme": "Cappuccina twirled with creamy delight, Spinning and sliding from morning to night. She split with a shout: Oh what a routine! and dropped in a mug - extra caffeine!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "130"
+  },
+  {
+    "number": "61",
+    "imageUrl": "https://www.coleka.com/media/item/202511/02/italian-brainrot-carte-n-61-061.webp",
+    "name": "TRALALITO BOCCIOSO",
+    "description": "A scaly triumph awaits",
+    "rhyme": "Tralalito, fierce and splashy grand, swung his stick with a flipper hand. Let's duel, sea fools! he gave a shout - then tripped on a rock and wiped night out!",
+    "category": "Kaboom Plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "62",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-62-062.webp",
+    "name": "BITBURGER COIN",
+    "description": "Crypto snack on a budget",
+    "rhyme": "Come closer, chomp if you dare... but tick me off and I'll scorch the air! ",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "70"
+  },
+  {
+    "number": "63",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-63-063.webp",
+    "name": "RACCRAPAPICCICANTE",
+    "description": "So sweet is scary",
+    "rhyme": "The creepy frog in a spacey disguise slurped veggie sauce with marshmallow pies. She yelled to the crowd: Antennas? I'm pro! Then bounced away with surfer show.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "60"
+  },
+  {
+    "number": "64",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-64-064.webp",
+    "name": "GRATTACIELO LETTERALE",
+    "description": "Scratch-proof poetry tower",
+    "rhyme": "A tower of words with rhyming core, lifts me to the alphabet floor. I dine on letter with butter divine, then adjectives serve the final line.",
+    "category": "Whirl Heads",
+    "type": "CHARACTER",
+    "madnessPoints": "190"
+  },
+  {
+    "number": "65",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-65-065.webp",
+    "name": "GRAIPUSSI MEDUSSI",
+    "description": "Dancing blob of grapes",
+    "rhyme": "Grape-bodied, zappy, sweet and loose, she danced to jazz with grapey juice. But zipped too far and twirled askew... right into soup - like fruity goo!",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "90"
+  },
+  {
+    "number": "66",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-66-066.webp",
+    "name": "NUCLEARO DINOSAURO",
+    "description": "Make crocodiles not war",
+    "rhyme": "A dino flew with nukes in tow, across the sea in search of foe. Mission complete! he gave a cheer - and hit the highway's busiest tier.",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "210"
+  },
+  {
+    "number": "67",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-67-067-150.webp",
+    "name": "RUPIPIPIPI STREAMIMIMIMIMI ",
+    "description": "Stream rich, flop hard",
+    "rhyme": "She posed on cash with selfie charm, and hoped to buy a bigger farm. No likes, no hearts, no viral stream... just grandma's like... and fading dream.",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "100"
+  },
+  {
+    "number": "68",
+    "imageUrl": "https://www.coleka.com/media/item/202511/02/italian-brainrot-carte-n-68-068.webp",
+    "name": "ZAMPATIGNA ZOPPICANTE",
+    "description": "Rural scare expert ",
+    "rhyme": "He plays with pebbles no king or ace stitched-up rags all over the place Talks to chickens in country flair and weds a squash with diva air.",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "140"
+  },
+  {
+    "number": "69",
+    "imageUrl": "https://www.coleka.com/media/item/202511/02/italian-brainrot-carte-n-69-069.webp",
+    "name": "BABBOBOMBO CARAMELLO",
+    "description": "Terrifying treat",
+    "rhyme": "He rode a muffler not a sleigh and dripped in fudge by Christmas Day I'm bean Sugar Yum he cried then sizzled off and caramel-fried.",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "185"
+  },
+  {
+    "number": "70",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-70-070.webp",
+    "name": "FRR FRR CHIMPANIFRITI",
+    "description": "The ambush",
+    "rhyme": "The jungle hushed, the leaves went still... then out he came with stealth and thrill: Frr Frr Chimpanifriti!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "70"
+  },
+  {
+    "number": "71",
+    "imageUrl": "https://www.coleka.com/media/item/202510/26/italian-brainrot-carte-n-71-071.webp",
+    "name": "KOTLETINO MERKATINO",
+    "description": "Frydom fighter",
+    "rhyme": "In Frytown's market rage did rise his golden coat was full of lies! This crispy mess? A fried illusion! Thus began the breading revolution!",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "30"
+  },
+  {
+    "number": "72",
+    "imageUrl": "https://www.coleka.com/media/item/202511/02/italian-brainrot-carte-n-72-072.webp",
+    "name": "SCIO SCIO CHAMPIGNON",
+    "description": "Scary but sauteable",
+    "rhyme": "Sciò Sciò said Champignon, mad as a hatter, in Klingon shrieks and sporeful chatter. He camouflaged like a lizard in dirt, and screamed from his cap till his roots got hurt!",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "165"
+  },
+  {
+    "number": "73",
+    "imageUrl": "https://www.coleka.com/media/item/202511/02/italian-brainrot-carte-n-73-073.webp",
+    "name": "BELERICK",
+    "description": "Hermes called it... Seagullius!",
+    "rhyme": "Half beak, half bite, in midair he spun - a Gabbeast born from sea and sun!",
+    "category": "Kaboom Plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "74",
+    "imageUrl": "https://www.coleka.com/media/item/202511/16/skifidol-italian-brainrot-psychedelic-universe-carte-n-74-074-150.webp",
+    "name": "BOMBOCLAT CROCLAT",
+    "description": "Croc-mutant asault",
+    "rhyme": "A mutant croc flew through the void, chomping clouds like asteroids. Strike! he roared with scaly zeal, firinga missile surreal!",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "75"
+  },
+  {
+    "number": "75",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-75-075.webp",
+    "name": "BOMBARISTO SEALSTO SEAL",
+    "description": "Always fasten your seatbelt",
+    "rhyme": "A monk seal strapped with sky appeal, prepped for lift-off, sleek and surreal!",
+    "category": "Grump Force",
+    "type": "CHARACTER",
+    "madnessPoints": "30"
+  },
+  {
+    "number": "76",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-76-076.webp"
+  },
+  {
+    "number": "77",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-77-077.webp",
+    "name": "BEARORITO APPLEPITOLIROTITO",
+    "description": "Never get spotted",
+    "rhyme": "Beaerorito walks, the apple moon's bright, through Big Apple alleys, soft as light.",
+    "category": "Kaboom Plan",
+    "type": "ASSIST"
+  },
+  {
+    "number": "78",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-78-078.webp",
+    "name": "FRIGO CAMELO",
+    "description": "Summer chill",
+    "rhyme": "Into the fridge went the camel, quite mellow, but all he could find was broccoli yellow. No cool breeze? No frozen jell-o? He turned into a charming old fellow!",
+    "category": "Error 404",
+    "type": "CHARACTER",
+    "madnessPoints": "70"
+  },
+  {
+    "number": "79",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-79-079.webp"
+  },
+  {
+    "number": "80",
+    "imageUrl": "https://www.coleka.com/media/item/202509/02/italian-brainrot-panini-italian-brainrot-78-078.webp",
+    "name": "PECORINI LANUSINI",
+    "description": "Counting sheep helps sleep",
+    "rhyme": "The sheep with fringe and wool so light, strummed her noodles with all her might.",
+    "category": "Mutant Bunch",
+    "type": "CHARACTER",
+    "madnessPoints": "135"
+  }
+]
